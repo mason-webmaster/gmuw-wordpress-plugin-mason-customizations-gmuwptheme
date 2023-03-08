@@ -154,7 +154,7 @@ function gmuj_gmuwptheme_get_live_website_theme($post_id){
       //$return_value.='Post ID: '.$post_id.'<br />';
 
       // Get post hosting domain from post object
-      $domain = get_post_meta($post_id, 'hosting_domain', true);
+      $domain = get_post_meta($post_id, 'environment_name', true).'.wpengine.com';
       //$return_value.='Domain: '.$domain.'<br />';
 
       // Set URL for REST endpoint
